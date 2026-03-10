@@ -1,0 +1,30 @@
+# Ignore uploads directory (user uploaded files)
+uploads/
+uploads/*
+
+# Keep uploads directory structure but ignore files
+!uploads/.htaccess
+
+# Email config with real SMTP keys (not committed to GitHub)
+config/email_config.local.php
+
+# XAMPP/Development files
+.htaccess
+*.log
+*.cache
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+config.local.php
+

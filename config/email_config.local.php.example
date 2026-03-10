@@ -1,0 +1,21 @@
+<?php
+/**
+ * File cấu hình email riêng - KHÔNG commit lên GitHub
+ * 
+ * HƯỚNG DẪN:
+ * 1. Copy file này thành: email_config.local.php
+ * 2. Điền thông tin SMTP của bạn vào các hằng số bên dưới
+ * 3. File email_config.local.php sẽ tự động được .gitignore (không commit lên GitHub)
+ */
+
+// Cấu hình SMTP Brevo
+const BREVO_SMTP_HOST       = 'smtp-relay.brevo.com';
+const BREVO_SMTP_PORT       = 587;
+const BREVO_SMTP_SECURE     = 'tls';
+const BREVO_SMTP_USERNAME   = '9c29d7001@smtp-brevo.com';  // Thay bằng SMTP username của bạn
+const BREVO_SMTP_PASSWORD   = 'YOUR_BREVO_SMTP_KEY';       // Thay bằng SMTP key của bạn
+const BREVO_FROM_EMAIL      = '9c29d7001@smtp-brevo.com';
+const BREVO_FROM_NAME       = 'DentaCare - Nha Khoa';
+const BREVO_CC_EMAIL        = '';  // CC email (nếu có)
+?>
+
